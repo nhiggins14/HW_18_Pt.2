@@ -1,6 +1,15 @@
 body {
     font-family: 'Merriweather', serif;
+ 
 
+}
+
+.nav-item {
+    margin-right: 50px;
+    color: grey;
+}
+a {
+    color: #6B3A9C;
 }
 .cardSection {
     display: flex;
@@ -21,27 +30,64 @@ body {
 }
 
 .jumbo1 {
-    height: 50vh;
+    height: 700px;
     background-image: url("../images/PurpleDream.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
+    z-index: 800;
+    margin-bottom: 300px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.Nathaniel {
+    font-family: 'Merriweather', serif;
+    font-size: 110px;
+    position: absolute;
+    top: 15%;
+}
+#NuThanUl  {
+    font-size: 40px;
   
 }
+.italics {
+    font-style: italic;
+}
+.pronunciation {
+    font-size: 20px;
+    position: absolute;
+    left: 53%;
+    top: 35%;
+    text-align: left;
+}
+.syllable{
+    font-size: 30px;
+    font-style: italic;
+    /* font-family: 'Heebo', sans-serif; */
+    font-family: 'Merriweather', serif;
+}
+
+
+
 
 
 #Portfolio {
-    font-size: 470px;
+    font-size: 460px;
     font-family: 'Heebo', sans-serif;
     position: relative;
-    left: -54px;
+    left: -43px;
+
 }
+
 #portfolioCont {
     position: sticky;
     top: 0px;
-    margin-top: 150px;
     overflow: hidden;
+    z-index: -50;
+    bottom: 100px;
+    margin-bottom: 100px;
+
 }
 
 .cardSection {
@@ -50,6 +96,12 @@ body {
 .card {
     margin: 0 5% 18%;
     width: 35%;
+}
+.card-title {
+    font-weight: bold;
+}
+.card-text {
+    font-weight: 400;
 }
 .listItem {
     padding: 25px;
@@ -61,34 +113,78 @@ body {
     width: 50vw;
 }
 
-/* attempt to unstick */
-.Portfolio-Fixed {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-
+.btn {
+    background-color: #6B3A9C;
+    /* color: #6B3A9C; */
 }
+
+
+
+
+
 
 .blank {
     display: flex;
-    height: 80vh;
+    flex-direction: column;
+    height: 60vh;
     width: 100%;
     background-color: white;
-    z-index: 100;
+    z-index: 10;
     position: sticky;
     top: 0px;
     margin-top: 75px;
+    border-top: 20px solid #6B3A9C;
 }
+
+
+.skillsSectionREDO {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 1500;
+    height: 40vh;
+    align-items: center;
+    top: -32%;
+    margin-top: 20%;
+}
+#skillsHead {
+    font-weight: bold;
+    font-size: 4.2rem;
+    margin-bottom: 7%;
+}
+.buttonSection {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+
+.skillsButton {
+    width: 15%;
+    height: 115%;
+
+}
+
+#purpleLine {
+    width: 80%;
+    height: 20px;
+    background-color: #6B3A9C;
+    margin-top: 5%;
+    position: relative;
+  
+
+}
+
 
 .jumbo2 {
     position: relative;
     display: flex;
     float: left;
     width: 85%;
-    margin-top: 150px;
-    height: 80vh;
+    margin-top: 6%;
+    height: 90vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -98,26 +194,17 @@ body {
 }
 
 .ovalFace {
-    /* height: 500px;
-    width: 500px; */
+  width: 30%;
+  margin: -2% 0 3%;
 }
 
-.popOver {
-    z-index: 800;
+#AboutMe h1 {
+    font-size: 3em;
+    margin-bottom: 3%;
 }
 
-.skillsSection {
-    display: flex;
-    flex-direction: row;
-    margin-top: -600px;
-    z-index: 500;
-}
-#skillsImg{
-    background-image: url("../images/UXimg.png");
-    background-size: cover;
-    background-repeat: none;
-    width: 50vw;
-    z-index: 800;
+#AboutMe .btn {
+    margin-top: 3%;
 }
 
 .footer {
@@ -129,7 +216,7 @@ body {
     width: 100%;
     z-index: 200;
     position: relative;
-    margin-top: 40%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -154,4 +241,114 @@ body {
     font-size: 1.5em;
     cursor: pointer;
     color: white;
+}
+
+
+@media only screen and (max-width: 1260px) {
+    #Portfolio {
+        font-size: 360px;
+    } 
+    .pronunciation {
+        top: 30%;
+    }
+    .jumbo1 {
+        margin-bottom: -335px;
+        background-position: center bottom;
+    }
+    .skillsSectionREDO {
+        top: -20%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #Portfolio {
+        font-size: 290px;
+    } 
+
+    .jumbo1 {
+        margin-bottom: -280px;
+        width: 100%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+    .jumbo1 {
+        background-position: right bottom;
+   
+    }
+    .Nathaniel {
+        display: flex;
+        flex-direction: column;
+    }
+    .pronunciation {
+        top: 55%;
+    }
+    #Portfolio {
+        font-size: 214px;
+        left: -28px;
+
+    }
+}
+@media only screen and (max-width: 375px) {
+    
+    body {
+        position: absolute;
+        width: 147vw;
+
+     
+     
+    }
+    .jumbo1 {
+        background-position: right bottom;
+  
+        margin-bottom: -143px;
+        height: 500px;
+    }
+
+    .Nathaniel {
+        font-size: 90px;
+        top: 2%;
+    }    
+    .pronunciation {
+        top: 8%;
+        
+    }
+    .skillsSectionREDO {
+        top: -10%;
+    }
+.cardSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card {
+    height: 213px;
+    width: 334px;
+    margin: 250px auto;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#Portfolio {
+    font-size: 155px;
+    left: -22px;
+}
+.cardSecTop {
+    margin-top: -200px;
+}
+.skillsButton {
+    width: 20%;
+    height: 90%;
+}
+#AboutMe h1, #AboutMe p {
+    text-align: center;
+}
+
+
+
 }
