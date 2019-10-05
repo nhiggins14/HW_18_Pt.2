@@ -1,0 +1,157 @@
+body {
+    font-family: 'Merriweather', serif;
+
+}
+.cardSection {
+    display: flex;
+    justify-content: center;
+    
+}
+.UXUI {
+    display: block;
+    position: relative;
+    border: 2px solid black;
+    height: 250px;
+    width: 50px;
+}
+
+.labelLeft {
+    flex-wrap: wrap-reverse;
+    text-orientation: sideways;
+}
+
+.jumbo1 {
+    height: 50vh;
+    background-image: url("../images/PurpleDream.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  
+}
+
+
+#Portfolio {
+    font-size: 470px;
+    font-family: 'Heebo', sans-serif;
+    position: relative;
+    left: -54px;
+}
+#portfolioCont {
+    position: sticky;
+    top: 0px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.cardSection {
+    /* height: 80%; */
+}
+.card {
+    margin: 0 5% 18%;
+    width: 35%;
+}
+.listItem {
+    padding: 25px;
+}
+.skillsList {
+    position: relative;
+    top: 0px;
+    z-index: 500;
+    width: 50vw;
+}
+
+/* attempt to unstick */
+.Portfolio-Fixed {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+
+}
+
+.blank {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+    margin-top: 75px;
+}
+
+.jumbo2 {
+    position: relative;
+    display: flex;
+    float: left;
+    width: 85%;
+    margin-top: 150px;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+    color: white;
+    background-image: linear-gradient(to right top, #ff0000, #f8003a, #e5005c, #c60077, #9f0089, #8b0190, #740a96, #56159c, #5c209c, #61299c, #66329c, #6b3a9c);
+}
+
+.ovalFace {
+    /* height: 500px;
+    width: 500px; */
+}
+
+.popOver {
+    z-index: 800;
+}
+
+.skillsSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: -600px;
+    z-index: 500;
+}
+#skillsImg{
+    background-image: url("../images/UXimg.png");
+    background-size: cover;
+    background-repeat: none;
+    width: 50vw;
+    z-index: 800;
+}
+
+.footer {
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    background-image: linear-gradient(to right top, #ff0000, #f8003a, #e5005c, #c60077, #9f0089, #8b0190, #740a96, #56159c, #5c209c, #61299c, #66329c, #6b3a9c);
+    height: 35vh;
+    min-height: 200px;
+    width: 100%;
+    z-index: 200;
+    position: relative;
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+   
+}
+.line {
+    width: 60%;
+    height: 3px;
+    background-color: white;
+    margin-top: -5%;
+    position: relative;
+}
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+.footerCase, .footerAboutMe {
+    margin: 1% 10%;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
